@@ -19,7 +19,7 @@ function PressPage () {
     }
   
       return(
-          <div className='press'>
+          <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
               <div className='press__header'>
                   <h1 className='press__title'>{t('press kit')}</h1>
                   <h3 className='press__subtitle'>{t('use our assets')}</h3>

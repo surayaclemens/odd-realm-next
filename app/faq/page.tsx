@@ -44,7 +44,7 @@ function FaqPage () {
  
 
     return(
-        <div className='faq'>
+        <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
             <div className='faq__header'>
                 <h1 className='faq__title faq__title--caps'>{t('frequently asked questions')}</h1>
             </div>

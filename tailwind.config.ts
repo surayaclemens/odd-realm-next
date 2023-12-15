@@ -24,6 +24,7 @@ const config: Config = {
       },
       colors: {
         'purple': '#8A7CDA',
+        'purple-light': '#B4ABE8',
         'orange': '#FFB537',
         'yellow': '#FFD24F',
         'pink': '#FD679F',

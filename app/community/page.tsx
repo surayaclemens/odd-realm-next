@@ -4,8 +4,6 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import React from 'react';
-import Link from 'next/link';
-import Head from 'next/head';
 // import { useDispatch, useSelector } from "react-redux";
 // import {showDiscord, showTwitch, showReddit, hideDiscord, hideReddit, hideTwitch} from '../redux/doorLinks';
 
@@ -37,41 +35,25 @@ function CommunityPage () {
     // };
 
     return(
-        <div className='community'>
-            <div className='community__header'>
-                <h1 className='community__title'>{t('community')}</h1>
-                <h3 className='community__subtitle'>{t('find odd friends')}</h3>
+        <div className='flex min-h-screen flex-col items-center justify-start p-8 lg:px-28 font-sans text-black'>
+            <div className='flex flex-col w-full'>
+                <h1 className='text-lg uppercase lg:text-2xl my-2'>{t('find odd friends')}</h1>
             </div>
-            {/* CODE WITH REDUX - REFACTOR */}
-            {/* <div className='community-links'>
-                <div className='community-links__single'>
-                    {!isDiscordLinkVisible ?
-                        <img className='community-image' src='' alt='door' onClick={() => showDis()}/>
-                        :
-                        <a href='https://discord.gg/6bw3k6w' target='blank'>
-                            <button className='community-links__button'>Discord</button>
-                        </a>
-                    }
-                </div>
-                <div className='community-links__single'>
-                    {!isTwitchLinkVisible ?
-                        <img className='community-image' src='' alt='door'onClick={() => showTwi()}/>
-                        :
-                        <a href='https://www.twitch.tv/directory/category/odd-realm' target='blank'>
-                            <button className='community-links__button'>Twitch</button>
-                        </a>
-                    }
-                </div>
-                <div className='community-links__single'>
-                    {!isRedditLinkVisible ?
-                        <img className='community-image' src='' alt='door'onClick={() => showRed()}/>
-                        :
-                        <a href='https://www.reddit.com/r/oddrealm/' target='blank'>
-                            <button className='community-links__button'>Reddit</button>
-                        </a>
-                    }
-                </div>
-            </div> */}
+            <div className='flex flex-col w-full justify-evenly'>
+                <a className='my-3 flex flex-col justify-between items-start' href='https://discord.gg/6bw3k6w' target='blank'>
+                    <p className=''>Talk about blah blah on</p>
+                    <button className='bg-white bg-opacity-20 my-1 hover:border-white hover:text-white text-md flex justify-center rounded-md px-4 py-1 border-1 border-black'>Discord</button>
+                </a>
+                <a className='my-3 flex flex-col justify-between items-start' href='https://www.twitch.tv/directory/category/odd-realm' target='blank'>
+                    <p className=''>Talk about blah blah on</p>
+                    <button className='bg-white bg-opacity-20 my-1 hover:border-white hover:text-white text-md flex justify-center rounded-md px-4 py-1 border-1 border-black'>Twitch</button>
+                </a>
+
+                <a className='my-3 flex flex-col justify-between items-start' href='https://www.reddit.com/r/oddrealm/' target='blank'>
+                    <p className=''>Talk about blah blah on</p>
+                    <button className='bg-white bg-opacity-20 my-1 hover:border-white hover:text-white text-md flex justify-center rounded-md px-4 py-1 border-1 border-black'>Reddit</button>
+                </a>
+            </div>
         </div>
     );
 }

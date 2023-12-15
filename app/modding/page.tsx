@@ -14,7 +14,7 @@ function ModPage () {
   }, [])
   
       return(
-          <div className='mod'>
+          <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
               <div className='mod__header'>
                   <h1 className='mod__title'>{t('modding policy')}</h1>
                   <h3 className='mod__subtitle'>{t('modding subtitle')}</h3>

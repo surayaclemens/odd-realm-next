@@ -7,7 +7,7 @@ function TermsPage () {
     const { t } = useTranslation();
 
     return(
-        <div className='terms'>
+        <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
             <div className='terms__header'>
                 <h1 className='terms__title'>{t('terms')}</h1>
             </div>
