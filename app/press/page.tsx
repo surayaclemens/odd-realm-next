@@ -19,18 +19,15 @@ function PressPage () {
     }
   
       return(
-          <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
-              <div className='press__header'>
-                  <h1 className='press__title'>{t('press kit')}</h1>
-                  <h3 className='press__subtitle'>{t('use our assets')}</h3>
-              </div>
-              <div className='press-text'>
-                  <p className='press-text__text'>{t('press kit text 1')}</p>
-                  <p className='press-text__text'>{t('press kit text 2')}</p>
-                  <p className='press-text__text'>{t('press kit text 3')}</p>
-              </div>
-              <p className='press-text__text'>{t('press kit text 4')}</p>
-              <a className='press__button' href='/press-kit.zip' target="_blank" rel="noopener noreferrer">{t('download')}</a>
+          <div className='flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black'>
+            <h1 className='text-lg uppercase lg:text-2xl'>{t('press kit')}</h1>
+            <div className='flex flex-col my-4'>
+                <p className='my-1 text-2xl lg:text-4xl'>{t('press kit text 1')}</p>
+                <p className='my-1 text-2xl lg:text-4xl'>{t('press kit text 2')}</p>
+                <p className='my-1 text-2xl lg:text-4xl'>{t('press kit text 3')}</p>
+                <p className='my-4 text-2xl lg:text-4xl'>{t('press kit text 4')}</p>
+            </div>
+            <a className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3' href='/press-kit.zip' target="_blank" rel="noopener noreferrer">{t('download')}</a>
           </div>
       );
   }

@@ -64,9 +64,10 @@ function ContactPage () {
   }
   
       return(
-          <div className='flex min-h-screen flex-col items-start p-8 lg:px-28 font-sans text-black'>
+          <div className='flex min-h-screen flex-col items-start px-8 lg:px-28 font-sans text-black'>
             <h1 className='text-lg uppercase lg:text-2xl my-2'>{t('contact us')}</h1>
-            <form className='flex flex-col w-full' onSubmit={handleSubmit}>
+            <p className='text-3xl lg:text-4xl'>{t('contact 2')}</p>
+            <form className='flex flex-col w-full my-4' onSubmit={handleSubmit}>
                 <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
                     type='text' 
                     placeholder={t('first name')}
@@ -111,7 +112,7 @@ function ContactPage () {
               </form>
    
 
-                <h3 className='text-lg uppercase lg:text-2xl mt-8 my-2'>{t('or send us a message on...')}</h3>
+                <h3 className='text-lg uppercase lg:text-2xl mt-6 my-2'>{t('or send us a message on...')}</h3>
                 <div className='flex w-full justify-between'>
                     <a href='https://twitter.com/waylonsnedker' target='blank'><p className='bg-white bg-opacity-20 my-1 hover:border-white hover:text-white text-md flex justify-center rounded-md px-4 py-1 border-1 border-black'>{t('twitter')}</p></a>
                     <a href='https://discord.gg/6bw3k6w' target='blank'><p className='bg-white bg-opacity-20 my-1 hover:border-white hover:text-white text-md flex justify-center rounded-md px-4 py-1 border-1 border-black'>{t('discord')}</p></a>

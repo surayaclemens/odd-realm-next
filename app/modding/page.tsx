@@ -14,26 +14,32 @@ function ModPage () {
   }, [])
   
       return(
-          <div className='flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black'>
-              <div className='mod__header'>
-                  <h1 className='mod__title'>{t('modding policy')}</h1>
-                  <h3 className='mod__subtitle'>{t('modding subtitle')}</h3>
-              </div>
+          <div className='flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black'>
+             <h1 className='text-lg uppercase lg:text-2xl'>{t('modding policy')}</h1>
+             <h3 className='text-3xl lg:text-4xl my-2'>{t('modding subtitle')}</h3>
   
-              <div className='mod__body'>
-                  <ul className='mod-column'>
-                      <h3 className='mod-row__title'>{t('please do')}</h3>
-                      <li className='mod-row'>
-                          <img className='mod-row__icon' src='' alt='thumbs-up'/>
-                          <p className='mod-row__text'>Point 1</p>
+              <div className='flex flex-col lg:flex-row my-4'>
+                  <ul className='flex flex-col'>
+                      <h3 className='text-lg uppercase lg:text-2xl'>{t('please do')}</h3>
+                      <li className='flex flex-row justify-start items-center'>
+                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
+                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
+                      </li>
+                      <li className='flex flex-row justify-start items-center'>
+                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
+                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
                       </li>
                   </ul>
   
-                  <ul className='mod-column'>
-                      <h3 className='mod-row__title'>{t('please dont')}</h3>
-                      <li className='mod-row'>
-                          <img className='mod-row__icon' src='' alt='thumbs-up'/>
-                          <p className='mod-row__text'>Point 1</p>
+                  <ul className='flex flex-col my-4'>
+                      <h3 className='text-lg uppercase lg:text-2xl'>{t('please dont')}</h3>
+                      <li className='flex flex-row justify-start items-center'>
+                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
+                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
+                      </li>
+                      <li className='flex flex-row justify-start items-center'>
+                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
+                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
                       </li>
                   </ul>
               </div>

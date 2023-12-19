@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
                 <div className='flex flex-col lg:flex-row'>
                     <Link className='p-2' href='/faq'>FAQs</Link>
                     <Link className='p-2' href='/contact'>Contact</Link>
-                    <Link className='p-2' href='/terms'>Terms</Link>
+                    <Link className='p-2' href='/site-terms'>Terms</Link>
                 </div>
             </div>
             {/* social links */}
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
             </div>
             {/* copyright */}
             <div className='flex flex-col justify-center items-center py-4'>
-                <p className='text-sm'>&copy; 2023 Unknown Origin Games. All Rights Reserved.</p>
+                <p className='text-sm text-center'>&copy; 2023 Unknown Origin Games. All Rights Reserved.</p>
                 <a href='https://www.suraya.xyz' target='blank'>
                     <p className='text-xs'>Website by Soma Creative Studio</p>
                 </a>

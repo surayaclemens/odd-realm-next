@@ -5,9 +5,6 @@ import { useTranslation } from 'react-i18next';
 import '../i18n';
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
-
-
 
 export default function Home() {
   const { t } = useTranslation();
@@ -23,10 +20,7 @@ export default function Home() {
 
   return (
   <>
-    <Head>
-        <title>{t('Odd Realm | Home')}</title>
-    </Head>
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 lg:px-28 font-sans text-black">
+    <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-24 font-sans text-black">
         {/* SECTION 1 - TRAILER */}
         <section className='flex w-full flex-col justify-between lg:flex-row lg:items-center my-8'>
             <div className='flex flex-col'>
@@ -63,8 +57,8 @@ export default function Home() {
         {/* SECTION 3 - MAILING LIST */}
         <section className='my-8 flex flex-col justify-evenly items-center'>
             <h1 className='text-lg uppercase lg:text-2xl'>{t('join our mailing list')}</h1>
-            <h3 className='my-2 text-4xl'>{t('receive odd updates')}</h3>
-            <input className='w-4/5 my-4 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' type='email' placeholder={t('youremail@address.com')} onChange={(e) => setUserEmail(e.target.value)} />
+            <h3 className='my-2 text-3xl'>{t('receive odd updates')}</h3>
+            <input className='w-full lg:w-2/3 my-4 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' type='email' placeholder={t('youremail@address.com')} onChange={(e) => setUserEmail(e.target.value)} />
             <button className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3'onClick={() => handleNewsletter()} >{t('sign up')}</button>  
         </section>
     </main>
