@@ -28,10 +28,14 @@ const config: Config = {
         'orange': '#FFB537',
         'yellow': '#FFD24F',
         'pink': '#FD679F',
-        'green': "#60D695",
+        'green': "#20A777",
         'blue': '#3064BE',
         'black': '#1A1A1D',
-        'placeholder': 'rgba(255, 255, 255, 0.5)'
+        'red': '#E35224',
+        'red-light': '#FF5021',
+        'placeholder': 'rgba(255, 255, 255, 0.5)',
+        'midnight': '#0E3789',
+        'magenta': '#BE5DD3'
       }
     },
   },

@@ -15,7 +15,7 @@ function PlayPage () {
   
       return(
           <div className='flex min-h-screen flex-col items-start justify-between px-8 lg:px-28 font-sans text-black'>
-             <h3 className='text-lg uppercase lg:text-2xl'>{t('play the game')}</h3>
+             <h3 className='text-lg uppercase'>{t('play the game')}</h3>
              <p className='text-3xl lg:text-4xl my-2'>Buy Odd Realm on</p>
               <div className='flex flex-col w-full justify-evenly items-center lg:flex-row my-4'>
                 <a className='' href='https://store.steampowered.com/app/688060/Odd_Realm/' target='blank'>
@@ -30,7 +30,7 @@ function PlayPage () {
               </div>
 
               <div className='my-16'>
-                <h3 className='text-lg uppercase lg:text-2xl my-2'>{t('reviews title')}</h3>
+                <h3 className='text-lg uppercase my-2'>{t('reviews title')}</h3>
                 <p className='text-3xl lg:text-4xl my-2'>{t('reviews title 2')}</p>
                 <div className='max-w-[320px] md:max-w-[800px] lg:max-w-[1200px]'>
                     <div className='flex justify-start items-center overflow-x-scroll rounded-md p-1'>

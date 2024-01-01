@@ -44,7 +44,7 @@ function FaqPage () {
 
     return(
         <div className='flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black'>
-            <h1 className='text-lg uppercase lg:text-2xl'>{t('frequently asked questions')}</h1>
+            <h1 className='text-lg uppercase'>{t('frequently asked questions')}</h1>
             <ul className='flex flex-col w-full'>
                 {questions.map((item: any, index: number) => {
                     return (
