@@ -18,29 +18,23 @@ export default function Home() {
     console.log(userEmail);
   }
 
-  const handleTypewriter = () => {
-    console.log('typewriter');
-    return 'typewriter';
-  }
 
   return (
   <>
-    <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-32 font-sans text-black">
-        {/* SECTION 1 - TRAILER */}
-        <section className='flex w-full flex-col justify-between lg:items-center my-8'>
-        <h1 className='text-5xl lg:text-9xl lg:my-48 text-red'>{t('tagline1')} {t('tagline2')} {t('tagline3')}</h1>
-            <iframe className='rounded-md my-8 aspect-video lg:my-4 lg:w-full' width="auto" height="auto" src="https://www.youtube.com/embed/g6lDVJFFJ10?si=_0DBe9ou4wefV-nb&autoplay=1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </section>
-        {/* SECTION 2 - ABOUT THE GAME */}
-        <section className='my-8 lg:my-24 flex flex-col'>
-            <h1 className='text-sm lg:text-lg uppercase' onMouseEnter={()=>handleTypewriter()}>{t('about the game')}</h1>
-            {/* DETAILS 1 */}
-            <div className='pt-0 pb-4 lg:flex flex-col items-center'>
-              <p className='my-4 text-2xl lg:text-8xl'>{t('gameDetails1')}</p>
-              <Image className='w-full lg:my-2 rounded-md' src='/images/gameplay-river.png' width={450} height={300} alt='gameplay'/>
+    <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-24 font-sans text-black">
+        {/* <section className='flex w-full flex-col justify-between lg:items-center my-8'> */}
+        {/* <h1 className='text-5xl lg:text-9xl lg:py-52 text-red'>{t('tagline1')} {t('tagline2')} {t('tagline3')}</h1> */}
+        {/* </section> */}
+
+        <section className='my-8 flex flex-col'>
+            {/* INTRO 1 & TRAILER */}
+            <div className='lg:flex flex-col items-center'>
+              <p className='my-4 lg:my-48 text-2xl lg:text-8xl'>{t('gameDetails1')}</p>
+              <iframe className='rounded-md my-8 aspect-video lg:my-4 w-full' width="auto" height="auto" src="https://www.youtube.com/embed/g6lDVJFFJ10?si=_0DBe9ou4wefV-nb&autoplay=1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             {/* DETAILS 2 */}
             <div className='py-4 lg:py-20'>
+              <h1 className='text-sm lg:text-lg uppercase '>{t('about the game')}</h1>
               <p className='my-4 text-2xl lg:text-8xl'>{t('gameDetails2')}</p>
               <Image className='w-full lg:my-2 rounded-md' src='/images/gameplay-island.png' width={450} height={300} alt='gameplay'/>
             </div>
@@ -49,9 +43,10 @@ export default function Home() {
                 <p className='my-4 text-2xl lg:text-8xl'>{t('gameDetails3')}</p>
                 <Image className='w-full lg:my-2 rounded-md' src='/images/gameplay-home.png' width={450} height={300} alt='gameplay'/>
             {/* LEARN MORE */}
-            <Link className='w-full flex justify-center my-8' href="/about">
-                <button className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3 uppercase lg:w-[350px]'>{t('more')}</button>
-            </Link>
+            <div className='py-4 flex flex-col items-center justify-center'>
+              <p className='my-4 text-2xl lg:text-8xl text-center'>{t('gameDetails4')}</p>
+              <Link className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md my-4 py-2 px-3 uppercase text-center lg:w-[350px]' href="/about">{t('more')}</Link>
+            </div>
             </div>
         </section>
 
