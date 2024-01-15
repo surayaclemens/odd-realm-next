@@ -22,15 +22,12 @@ export default function Home() {
   return (
   <>
     <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-24 font-sans text-black">
-        {/* <section className='flex w-full flex-col justify-between lg:items-center my-8'> */}
-        {/* <h1 className='text-5xl lg:text-9xl lg:py-52 text-red'>{t('tagline1')} {t('tagline2')} {t('tagline3')}</h1> */}
-        {/* </section> */}
 
         <section className='my-8 flex flex-col'>
             {/* INTRO 1 & TRAILER */}
             <div className='lg:flex flex-col items-center'>
-              <p className='my-4 lg:my-48 text-2xl lg:text-8xl'>{t('gameDetails1')}</p>
-              <iframe className='rounded-md my-8 aspect-video lg:my-4 w-full' width="auto" height="auto" src="https://www.youtube.com/embed/g6lDVJFFJ10?si=_0DBe9ou4wefV-nb&autoplay=1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+              <p className='my-4 lg:mt-48 lg:mb-28 text-2xl lg:text-8xl'>{t('gameDetails1')}</p>
+              <iframe className='rounded-md my-8 aspect-video lg:mb-16 w-full' width="auto" height="auto" src="https://www.youtube.com/embed/g6lDVJFFJ10?si=_0DBe9ou4wefV-nb&autoplay=1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
             {/* DETAILS 2 */}
             <div className='py-4 lg:py-20'>

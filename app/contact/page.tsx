@@ -64,10 +64,10 @@ function ContactPage () {
   }
   
       return(
-          <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-48 font-sans text-black'>
+          <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
             <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('contact us')}</h3>
             <div className='flex flex-col justify-between w-full lg:flex-row'>
-                <form className='flex flex-col w-full my-4 lg:w-2/3' onSubmit={handleSubmit}>
+                <form className='flex flex-col w-full my-4 lg:w-1/2' onSubmit={handleSubmit}>
                     <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
                         type='text' 
                         placeholder={t('first name')}
@@ -109,15 +109,14 @@ function ContactPage () {
                     <button className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3 my-6 uppercase'>
                     {isSent ? t('sent!') : t('send')}
                     </button>
+                    <h3 className='text-lg my-2'>
+                        {t('or send us a message on')}
+                        <Link className='text-black hover:text-white' href='https://twitter.com/waylonsnedker' target='blank'> {t('twitter')}, </Link>
+                        <Link className='text-black hover:text-white' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}, </Link>
+                        <Link className='text-black hover:text-white' href='https://www.instagram.com/oddrealmgame/' target='blank'>or {t('instagram')}</Link>
+                    </h3>
                 </form>
-                <div className=''>
-                    <h3 className='text-lg my-2'>{t('or send us a message on')}</h3>
-                    <div className='flex w-full justify-between flex-col'>
-                        <Link className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md my-1 py-2 px-3 uppercase text-center lg:w-[350px]' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
-                        <Link className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md my-1 py-2 px-3 uppercase text-center lg:w-[350px]' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
-                        <Link className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md my-1 py-2 px-3 uppercase text-center lg:w-[350px]' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
-                    </div>
-                </div>
+                <Image src='/' alt='pixel art of messaging' width={250} height={250}/>
             </div>
    
 

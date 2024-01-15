@@ -1,25 +1,16 @@
-'use client'
-import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import Link from "next/link";
 import { useTranslation } from 'react-i18next';
-import '../../i18n';
-import React from 'react';
-import Link from 'next/link';
-
-function CommunityPage () {
-    const { t } = useTranslation();
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, []);
+// import '../../i18n';
+import Image from 'next/image';
 
 
-    return(
-        <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
-            <h3 className='text-md uppercase my-4 lg:text-8xl lg:normal-case'>{t('find odd friends')}</h3>
-            {/* need to add translation for below */}
-            <h3 className='text-md my-2 lg:text-5xl lg:normal-case'>{t('We have an incredible community of committed mods, bug reporters, etc. Join us!')}</h3>
-                {/* LIST OF LINKS */}
-                <div className='flex flex-col my-4 w-full justify-between lg:flex-row items-center'>
+const BuyModal: React.FC = () => {
+  const { t } = useTranslation();
+
+    return (
+        <main className='font-sans bg-magenta text-black flex flex-col justify-center items-center p-4 w-full h-4/5 lg:h-1/3'>
+            {/* links */}
+            <div className='flex flex-col my-4 w-full justify-between lg:flex-row items-center'>
                     <a className='flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='blank'>
                         <div className='flex justify-end w-full'>
                             <Image src='/icons/link-external.svg' alt='external link icon' width={20} height={20}/>
@@ -48,10 +39,11 @@ function CommunityPage () {
                         </div>
                     </a>
                 </div>
-                {/* IMAGE OF CHARACTERS ON TRANSPARENT BG */}
-                <Image className='lg:w-1/2' src='/images/characters.svg' alt='characters looking' width={300} height={300}/>
-        </div>
+           
+            
+        </main>
     );
-}
-
-export default CommunityPage;
+  };
+  
+  export default BuyModal;
+  
