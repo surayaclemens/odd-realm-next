@@ -22,7 +22,7 @@ const kanit = Kanit({
 
 
 export const metadata: Metadata = {
-  title: 'Odd Realm',
+  title: 'Odd Realm | Unknown Origin Games',
   description: 'Colony simulation game',
 }
 

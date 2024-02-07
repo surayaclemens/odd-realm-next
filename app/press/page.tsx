@@ -5,7 +5,6 @@ import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import React from 'react';
 import Link from 'next/link';
-import Head from 'next/head';
 
 
 function PressPage () {
@@ -27,7 +26,7 @@ function PressPage () {
                 <p className='my-1 text-2xl lg:text-4xl'>{t('press kit text 3')}</p>
                 <p className='my-4 text-2xl lg:text-4xl'>{t('press kit text 4')}</p>
             </div>
-            <a className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3' href='/press-kit.zip' target="_blank" rel="noopener noreferrer">{t('download')}</a>
+            <a className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-sm py-2 px-3' href='/press-kit.zip' target="_blank" rel="noopener noreferrer">{t('download')}</a>
           </div>
       );
   }

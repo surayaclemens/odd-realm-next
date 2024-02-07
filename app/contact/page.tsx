@@ -68,20 +68,20 @@ function ContactPage () {
             <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('contact us')}</h3>
             <div className='flex flex-col justify-between w-full lg:flex-row'>
                 <form className='flex flex-col w-full my-4 lg:w-1/2' onSubmit={handleSubmit}>
-                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
+                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-sm p-2' 
                         type='text' 
                         placeholder={t('first name')}
                         required
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                     />
-                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
+                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-sm p-2' 
                         type='text' 
                         placeholder={t('last name')}
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                     />
-                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
+                    <input className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-sm p-2' 
                         type='email'
                         placeholder={t('youremail@address.com')}
                         required
@@ -90,23 +90,23 @@ function ContactPage () {
                     />
                     {/* subject */}
                     <div className='flex items-center justify-between w-full'>
-                        <input className='w-full my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
+                        <input className='w-full my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-sm p-2' 
                             type='text' 
                             placeholder={t('subject')}
                             required
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
                         />
-                        <Image width={40} height={40} className='ml-2 rounded-md border-black border-1' src='/icons/star-white.svg' alt='magic star icon' title="Hate this part? We'll make one up for you :~)" onClick={() => handleSubject()}/>
+                        <Image width={40} height={40} className='ml-2 rounded-sm border-black border-1' src='/icons/star-white.svg' alt='magic star icon' title="Hate this part? We'll make one up for you :~)" onClick={() => handleSubject()}/>
                     </div>
                     {/* message box */}
-                    <textarea className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-md p-2' 
+                    <textarea className='my-2 text-md bg-white bg-opacity-20 placeholder-placeholder border-2 text-black border-black rounded-sm p-2' 
                         placeholder={t('your message here')} 
                         required
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <button className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-md py-2 px-3 my-6 uppercase'>
+                    <button className='hover:text-white hover:border-white text-xl bg-white bg-opacity-20 text-black border-2 border-black rounded-sm py-2 px-3 my-6 uppercase'>
                     {isSent ? t('sent!') : t('send')}
                     </button>
                     <h3 className='text-lg my-2'>

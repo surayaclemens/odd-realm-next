@@ -31,10 +31,10 @@ function PlayPage () {
               <div className='my-16'>
                 <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('reviews title')}</h3>
                 <div className='max-w-[320px] md:max-w-[800px] lg:max-w-[1200px]'>
-                    <div className='flex justify-start items-center overflow-x-scroll rounded-md p-1'>
+                    <div className='flex justify-start items-center overflow-x-scroll rounded-sm p-1'>
                         {reviews.map((item, index) => {
                             return (
-                                <p className='min-w-[275px] flex-wrap m-2 text-sm bg-white bg-opacity-20 rounded-md p-2 border-1 border-white text-black' key={index}>"{item.text}"</p>
+                                <p className='min-w-[275px] flex-wrap m-2 text-sm bg-white bg-opacity-20 rounded-sm p-2 border-1 border-white text-black' key={index}>"{item.text}"</p>
                             )
                         })}
                     </div>

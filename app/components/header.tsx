@@ -31,24 +31,24 @@ const Header: React.FC = () => {
                 {/* MENU CONTENT */}
                 {isMobileMenuOpen && (
                         <div className="w-full py-6 flex flex-col justify-start items-center z-50 uppercase">
-                            <Link className="w-32 rounded-md border-orange border-2 text-lg text-center p-2 my-2" href="/about" onClick={toggleMobileMenu}>About</Link>
-                            <Link className="w-32 rounded-md border-orange border-2 text-lg text-center p-2 my-2" href="/community" onClick={toggleMobileMenu}>Community</Link>
-                            <Link className="w-32 rounded-md border-orange border-2 text-lg text-center p-2 my-2" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
-                            <Link className="rounded-md border-green-light border-2 bg-green text-lg text-center p-2 my-2" href="/play" onClick={toggleMobileMenu}>Get Odd Realm</Link>
+                            <Link className="w-32 rounded-sm border-white border-2 text-lg text-center p-2 my-2" href="/about" onClick={toggleMobileMenu}>About</Link>
+                            <Link className="w-32 rounded-sm border-white border-2 text-lg text-center p-2 my-2" href="/community" onClick={toggleMobileMenu}>Community</Link>
+                            <Link className="w-32 rounded-sm border-white border-2 text-lg text-center p-2 my-2" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
+                            <Link className="rounded-sm border-white border-2 bg-green text-lg text-center p-2 my-2" href="/play" onClick={toggleMobileMenu}>Get Odd Realm</Link>
                         </div>
                     )} 
             </header>
 
             {/* DESKTOP */}
-            <header className="hidden lg:flex fixed w-full text-white bg-black justify-between items-center px-8 py-2 font-sans">
+            <header className="hidden lg:flex fixed w-full text-white bg-red justify-between items-center px-8 py-2 font-sans">
                 <Link href="/">
-                    <Image src="/images/logo.svg" alt="logo" width={130} height={130}/>
+                    <Image src="/images/logo.svg" alt="logo" width={100} height={100}/>
                 </Link>
-                <div className="py-6 flex justify-evenly items-center uppercase text-white">
-                    <Link className="w-28 rounded-md border-orange border-2 text-sm text-center p-2 mx-2 hover:border-white hover:text-white" href="/about" onClick={toggleMobileMenu}>About</Link>
-                    <Link className="w-28 rounded-md border-orange border-2  bg-opacity-10 text-sm text-center p-2 mx-2 hover:border-white hover:text-white" href="/community" onClick={toggleMobileMenu}>Community</Link>
-                    <Link className="w-28 rounded-md  border-orange border-2  bg-opacity-10 text-sm text-center p-2 mx-2 hover:border-white hover:text-white" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
-                    <Link className="rounded-md border-green-light border-2 bg-green text-sm text-center p-2 mx-2 text-white hover:border-white" href="/play" onClick={toggleMobileMenu}>Get Odd Realm</Link>
+                <div className="flex justify-evenly items-center uppercase text-white">
+                    <Link className="w-32 rounded-sm text-sm text-center p-2 mx-2 hover:text-white hover:border-white bg-white bg-opacity-20 text-black border-2 border-black" href="/about" onClick={toggleMobileMenu}>About</Link>
+                    <Link className="w-32 rounded-sm text-sm text-center p-2 mx-2 hover:text-white hover:border-white bg-white bg-opacity-20 text-black border-2 border-black" href="/community" onClick={toggleMobileMenu}>Community</Link>
+                    <Link className="w-32 rounded-sm text-sm text-center p-2 mx-2 hover:text-white hover:border-white bg-white bg-opacity-20 text-black border-2 border-black" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
+                    <Link className="rounded-sm border-black border-2 bg-green text-sm text-center p-2 mx-2 text-white hover:border-white" href="/play" onClick={toggleMobileMenu}>Get Odd Realm</Link>
                 </div>
             </header>
         </>
