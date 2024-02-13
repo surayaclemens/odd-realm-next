@@ -14,11 +14,9 @@ function ModPage () {
   }, [])
   
       return(
-          <div className='flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black'>
-             <h1 className='text-lg uppercase'>{t('modding policy')}</h1>
-             <h3 className='text-3xl lg:text-4xl my-2'>{t('modding subtitle')}</h3>
-  
-              <div className='flex flex-col lg:flex-row my-4'>
+          <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
+             <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('modding policy')}</h3>
+              <div className='flex flex-col my-4'>
                   <ul className='flex flex-col'>
                       <h3 className='text-lg uppercase'>{t('please do')}</h3>
                       <li className='flex flex-row justify-start items-center'>

@@ -3,13 +3,14 @@ import { useTranslation } from 'react-i18next';
 // import '../../i18n';
 import Image from 'next/image';
 
-
 // Footer.tsx
 const Footer: React.FC = () => {
 //   const { t } = useTranslation();
 
     return (
+        <>
         <footer className='font-sans bg-purple text-white flex flex-col justify-between items-center p-4'>
+
             {/* word links */}
             <div className='flex w-2/3 justify-between my-2 md:justify-center'>
                 <div className='flex flex-col lg:flex-row'>
@@ -50,6 +51,8 @@ const Footer: React.FC = () => {
             </div>
             
         </footer>
+
+        </>
     );
   };
   

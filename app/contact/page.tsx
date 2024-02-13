@@ -116,7 +116,9 @@ function ContactPage () {
                         <Link className='text-black hover:text-white' href='https://www.instagram.com/oddrealmgame/' target='blank'>or {t('instagram')}</Link>
                     </h3>
                 </form>
-                <Image src='/' alt='pixel art of messaging' width={250} height={250}/>
+                <div className='w-[500px] h-[400px] bg-black m-6'> 
+                    <Image src='/' alt='pixel art of messaging' width={250} height={250}/>
+                </div>
             </div>
    
 

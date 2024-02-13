@@ -6,6 +6,8 @@ import '../i18n';
 import React from 'react';
 import Link from 'next/link';
 import TypingAnimation from './components/typing-animation/typing-animation';
+import BuyModal from './components/buyModal';
+
 
 export default function Home() {
   const { t } = useTranslation();
@@ -21,7 +23,6 @@ export default function Home() {
 
 
   return (
-  <>
     <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-32 font-sans text-black">
 
         <section className='my-4 flex flex-col'>
@@ -57,6 +58,5 @@ export default function Home() {
             <button className='hover:text-white hover:border-white bg-white bg-opacity-20 text-black border-2 border-black rounded-sm py-2 px-3 uppercase lg:w-[350px] text-xl'onClick={()=>handleNewsletter()} >{t('sign up')}</button>  
         </section>
     </main>
-  </>
   )
 }

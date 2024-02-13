@@ -4,6 +4,8 @@ import { Bakbak_One } from 'next/font/google';
 import './globals.css'
 import Header from './components/header';
 import Footer from './components/footer';
+import { Provider } from 'react-redux';
+import store from '../redux/store';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +23,7 @@ const kanit = Kanit({
 })
 
 
+
 export const metadata: Metadata = {
   title: 'Odd Realm | Unknown Origin Games',
   description: 'Colony simulation game',
@@ -31,13 +34,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
-    <html lang="en">
-      <body className={bakbak.variable}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    // <Provider store={store}>
+      <html lang="en">
+        <body className={bakbak.variable}>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    // </Provider>
   )
 }

@@ -43,8 +43,9 @@ function FaqPage () {
  
 
     return(
-        <div className='flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black'>
-            <h1 className='text-lg uppercase'>{t('frequently asked questions')}</h1>
+        <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
+            <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('frequently asked questions')}</h3>
+
             <ul className='flex flex-col w-full'>
                 {questions.map((item: any, index: number) => {
                     return (
@@ -55,9 +56,9 @@ function FaqPage () {
                         </div>
                             {item.arrowDown 
                                 ? 
-                                <Image width={25} height={25} className='' alt='minus' src='/icons/minus-square.svg' onClick={() => resetArrow(index)}/>
+                                <Image width={30} height={30} className='cursor-pointer' alt='minus' src='/icons/minus-square.svg' onClick={() => resetArrow(index)}/>
                                 :
-                                <Image width={25} height={25} className='' alt='plus' src='/icons/plus-square.svg' onClick={() => dropArrow(index)}/>
+                                <Image width={30} height={30} className='cursor-pointer' alt='plus' src='/icons/plus-square.svg' onClick={() => dropArrow(index)}/>
                         }
                     </li>
                     );
