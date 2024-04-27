@@ -21,7 +21,7 @@ function ReviewsPage () {
                         {reviews.map((item, index) => {
                             return (
                                 <div className='md:w-1/3'>
-                                    <p className='flex-wrap m-2 text-sm bg-white bg-opacity-20 rounded-sm p-2 border-1 border-white text-black' key={index}>"{item.text}"</p>
+                                    <p className='flex-wrap m-2 text-sm bg-white bg-opacity-20 rounded-sm p-2 border-1 border-white text-black' key={index}>{item.text}</p>
                                 </div>
                             )
                         })}

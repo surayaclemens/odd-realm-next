@@ -65,11 +65,11 @@ function AboutPage () {
               <h2 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('about the team')}</h2>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span className=''>Waylon Snedker </span>will have a short bio here. It's a few sentences.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>will have a short bio here. It's a few sentences.</p>
               </div>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span className=''>Matt Creamer </span>will have a short bio here. It's a few sentences.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Matt Creamer </span>will have a short bio here. It's a few sentences.</p>
               </div>
           </section>
           {/* SOMETHING ELSE */}
