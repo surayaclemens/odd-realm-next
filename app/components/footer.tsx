@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 <div className='flex flex-col lg:flex-row'>
                     <Link className='p-2' href='/press'>Press Kit</Link>
                     <Link className='p-2' href='/modding'>Modding Policy</Link>
-                    <Link className='p-2' href='/play'>Stores</Link>
+                    <Link className='p-2' href='/reviews'>Reviews</Link>
                 </div>
                 <div className='flex flex-col lg:flex-row'>
                     <Link className='p-2' href='/faq'>FAQs</Link>

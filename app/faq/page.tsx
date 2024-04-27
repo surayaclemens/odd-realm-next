@@ -46,13 +46,13 @@ function FaqPage () {
         <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
             <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('frequently asked questions')}</h3>
 
-            <ul className='flex flex-col w-full'>
+            <ul className='flex flex-col w-full my-8'>
                 {questions.map((item: any, index: number) => {
                     return (
                     <li className='flex justify-between items-center w-full my-2 bg-white bg-opacity-20 border-1 border-black p-2' key={index}>
                         <div className='w-4/5'>
-                            <p className='text-2xl lg:text-4xl'>{item.question}</p>
-                            {item.arrowDown ? <p className='my-2 text-xl lg:text-2xl'>{item.answer}</p>:null}
+                            <p className='text-2xl'>{item.question}</p>
+                            {item.arrowDown ? <p className='my-2 text-xl'>{item.answer}</p>:null}
                         </div>
                             {item.arrowDown 
                                 ? 
