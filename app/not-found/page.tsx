@@ -13,9 +13,9 @@ const NotFoundPage = () => {
         window.scrollTo(0, 0)
     }, [])
     return(
-        <div className="not-found">
-            <h1 className="not-found__title">Sorry, that page cannot be found!</h1>
-            <Link href='/'>Back to home</Link>
+        <div className="flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black">
+            <h1 className="text-lg">Sorry, that page cannot be found!</h1>
+            <Link className='text-lg underline' href='/'>Back to home</Link>
         </div>
 
     );

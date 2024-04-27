@@ -1,0 +1,19 @@
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; }
+  }
+  
+  .typing::after {
+    content: ""; /* Cursor */
+    animation: typing 5s steps(40, end);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Optional: Hide cursor when typing is finished */
+  /* .typing::after {
+    animation-fill-mode: forwards;
+  } */
+  

@@ -24,13 +24,21 @@ const config: Config = {
       },
       colors: {
         'purple': '#8A7CDA',
+        'purple-light': '#B4ABE8',
         'orange': '#FFB537',
         'yellow': '#FFD24F',
         'pink': '#FD679F',
-        'green': "#60D695",
+        'green': "#20A777",
+        'green-dark': '#07612B',
+        'green-light': '#7DFA9A',
         'blue': '#3064BE',
         'black': '#1A1A1D',
-        'placeholder': 'rgba(255, 255, 255, 0.5)'
+        'red': '#E35224',
+        'red-light': '#FF5021',
+        'placeholder': 'rgba(255, 255, 255, 0.5)',
+        'midnight': '#002165',
+        'magenta': '#BE5DD3',
+        'fuscia': '#ED0055'
       }
     },
   },
