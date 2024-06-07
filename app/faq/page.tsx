@@ -8,65 +8,58 @@ import Link from 'next/link';
 
 import faqList from '../../data/faqs.json';
 
-
-function FaqPage () {
+function FaqPage() {
   const { t } = useTranslation();
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, []);
   
- 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const [questions, setQuestions] = useState(
-    faqList.map((item: any) => {
-      return {
-        question: item.question,
-        answer: item.answer,
-        arrowDown: false
-      }
-    })
+    faqList.map((item: any) => ({
+      question: item.question,
+      answer: item.answer,
+      showAnswer: false,
+    }))
   );
 
-  const dropArrow = (index: number) => {
-    setQuestions((prevQuestions: any) => {
+  const toggleAnswer = (index: number) => {
+    console.log(`Toggling answer for question ${index}`); // Debug log
+    setQuestions(prevQuestions => {
       const updatedQuestions = [...prevQuestions];
-      updatedQuestions[index].arrowDown = true;
+      updatedQuestions[index].showAnswer = !updatedQuestions[index].showAnswer;
+      console.log(updatedQuestions[index]); // Debug state
       return updatedQuestions;
     });
-  }
-  const resetArrow = (index: number) => {
-    setQuestions((prevQuestions: any) => {
-      const updatedQuestions = [...prevQuestions];
-      updatedQuestions[index].arrowDown = false;
-      return updatedQuestions;
-    });
-  }
- 
+  };
 
-    return(
-        <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
-            <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('frequently asked questions')}</h3>
-
-            <ul className='flex flex-col w-full my-8'>
-                {questions.map((item: any, index: number) => {
-                    return (
-                    <li className='flex justify-between items-center w-full my-2 bg-white bg-opacity-20 border-1 border-black p-2' key={index}>
-                        <div className='w-4/5'>
-                            <p className='text-2xl'>{item.question}</p>
-                            {item.arrowDown ? <p className='my-2 text-xl'>{item.answer}</p>:null}
-                        </div>
-                            {item.arrowDown 
-                                ? 
-                                <Image width={30} height={30} className='cursor-pointer' alt='minus' src='/icons/minus-square.svg' onClick={() => resetArrow(index)}/>
-                                :
-                                <Image width={30} height={30} className='cursor-pointer' alt='plus' src='/icons/plus-square.svg' onClick={() => dropArrow(index)}/>
-                        }
-                    </li>
-                    );
-                })}
-            </ul>
-
-        </div>
-    );
+  return (
+    <div className='flex min-h-screen flex-col px-8 lg:px-32 py-8 lg:py-52 font-sans text-black'>
+      <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('frequently asked questions')}</h3>
+      
+      <ul className='flex flex-col items-center w-full my-8'>
+        {questions.map((item: any, index: number) => (
+          <li 
+            className='flex justify-between items-center w-full lg:w-4/5 my-2 bg-white bg-opacity-20 border-2 rounded-md border-black p-2 hover:border-white cursor-pointer' 
+            key={index} 
+            onClick={() => toggleAnswer(index)}
+          >
+            <div className='w-4/5'>
+              <p className='text-2xl'>{item.question}</p>
+              {item.showAnswer && <p className='my-2 text-xl'>{item.answer}</p>}
+            </div>
+            <Image 
+              width={30} 
+              height={30} 
+              className='cursor-pointer' 
+              alt={item.showAnswer ? 'minus' : 'plus'} 
+              src={item.showAnswer ? '/icons/minus-square.svg' : '/icons/plus-square.svg'} 
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default FaqPage;

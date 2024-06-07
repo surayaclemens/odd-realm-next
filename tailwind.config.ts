@@ -37,9 +37,9 @@ const config: Config = {
         'red-light': '#FF5021',
         'placeholder': 'rgba(255, 255, 255, 0.5)',
         'midnight': '#002165',
-        'magenta': '#BE5DD3',
+        'magenta': '#E37AC8',
         'fuscia': '#ED0055'
-      }
+      },
     },
   },
   plugins: [],

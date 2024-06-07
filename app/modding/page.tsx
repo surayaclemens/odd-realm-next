@@ -14,7 +14,7 @@ function ModPage () {
   }, [])
   
       return(
-          <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
+          <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-52 font-sans text-black'>
              <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('modding policy')}</h3>
               <div className='flex flex-col my-4'>
                   <ul className='flex flex-col'>

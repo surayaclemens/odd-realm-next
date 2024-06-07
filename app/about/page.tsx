@@ -15,7 +15,7 @@ function AboutPage () {
     }, [])
   
       return(
-         <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
+         <div className='flex min-h-screen flex-col px-8 lg:px-32 py-8 lg:py-52 font-sans text-black'>
             <h1 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('about our world')}</h1>
             <section className='w-full flex flex-col lg:py-8'>
               <div className='flex justify-start items-center my-2'>
@@ -65,11 +65,11 @@ function AboutPage () {
               <h2 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('about the team')}</h2>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>will have a short bio here. It is a few sentences.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>is the creative force behind Odd Realm. After studying game design at Vancouver Film School, he taught himself how to program while working as a designer at studios such as Kabam and Blackbird Interactive. He brought these skills together with his love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
               </div>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Matt Creamer </span>will have a short bio here. It is a few sentences.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Matthew Creamer </span>is who you can thank for Odd Realm's relaxing, immersive score. With 20 years in the industry, he is an accomplished composer and multimedia artist who excels at using music to create emotional experiences in video games and loves collaborating with creative teams who share his passion.</p>
               </div>
           </section>
           {/* SOMETHING ELSE */}
