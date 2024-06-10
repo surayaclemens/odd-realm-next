@@ -17,7 +17,8 @@ function ModPage () {
           <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-52 font-sans text-black'>
              <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('modding policy')}</h3>
               <div className='flex flex-col my-4'>
-                  <ul className='flex flex-col'>
+                <p className='text-xl'>Coming soon...</p>
+                  {/* <ul className='flex flex-col'>
                       <h3 className='text-lg uppercase'>{t('please do')}</h3>
                       <li className='flex flex-row justify-start items-center'>
                           <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
@@ -27,9 +28,9 @@ function ModPage () {
                           <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
                           <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
                       </li>
-                  </ul>
+                  </ul> */}
   
-                  <ul className='flex flex-col my-4'>
+                  {/* <ul className='flex flex-col my-4'>
                       <h3 className='text-lg uppercase'>{t('please dont')}</h3>
                       <li className='flex flex-row justify-start items-center'>
                           <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
@@ -39,7 +40,7 @@ function ModPage () {
                           <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
                           <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
                       </li>
-                  </ul>
+                  </ul> */}
               </div>
           </div>
       );

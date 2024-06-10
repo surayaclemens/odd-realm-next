@@ -1,55 +1,67 @@
 'use client'
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../../i18n';
 import React from 'react';
-import Link from 'next/link';
 
-function CommunityPage () {
+function CommunityPage() {
     const { t } = useTranslation();
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
-
-    return(
+    return (
         <div className='flex min-h-screen flex-col px-8 lg:px-32 py-8 lg:py-52 font-sans text-black'>
             <h3 className='text-md uppercase my-4 lg:text-8xl lg:normal-case'>{t('find odd friends')}</h3>
-            {/* need to add translation for below */}
             <h3 className='text-md my-2 lg:text-2xl lg:normal-case'>{t('We have a fantastic community of committed modders, bug reporters, etc. Join us!')}</h3>
-                {/* LIST OF LINKS */}
-                <div className='flex flex-col my-4 w-full justify-evenly lg:flex-row items-center'>
-                    <a className='flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='blank'>
-                        <div className='flex justify-end w-full'>
-                            <Image src='/icons/link-external.svg' alt='external link icon' width={20} height={20}/>
+            <div className='flex flex-col my-4 w-full justify-evenly lg:flex-row items-center'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='_blank'>
+                    <div className='flex justify-end w-full'>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/link-external.svg' alt='external link icon' width={20} height={20} />
+                            <Image className="hidden group-hover:block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
                         </div>
-                        <div className='flex flex-col items-center justify-evenly h-full'>
-                            <p className='text-xl lg:text-3xl text-center'>{t('discord details')}</p>
-                            <Image src='/icons/discord-dark.svg' alt='discord icon' width={150} height={150} />
+                    </div>
+                    <div className='flex flex-col items-center justify-evenly h-full'>
+                        <p className='text-xl lg:text-3xl text-center'>{t('discord details')}</p>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/discord-dark.svg' alt='discord icon' width={150} height={150} />
+                            <Image className="hidden group-hover:block" src='/icons/discord-white.svg' alt='discord icon' width={150} height={150} />
                         </div>
-                    </a>
-                    <a className='flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='blank'>
-                        <div className='flex justify-end w-full'>
-                            <Image src='/icons/link-external.svg' alt='external link icon' width={20} height={20}/>
+                    </div>
+                </a>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='_blank'>
+                    <div className='flex justify-end w-full'>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/link-external.svg' alt='external link icon' width={20} height={20} />
+                            <Image className="hidden group-hover:block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
                         </div>
-                        <div className='flex flex-col items-center justify-evenly h-full'>
-                            <p className='text-xl lg:text-3xl text-center'>{t('twitch details')}</p>
-                            <Image src='/icons/twitch-dark.svg' alt='twitch icon' width={140} height={140} />
+                    </div>
+                    <div className='flex flex-col items-center justify-evenly h-full'>
+                        <p className='text-xl lg:text-3xl text-center'>{t('twitch details')}</p>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/twitch-dark.svg' alt='twitch icon' width={140} height={140} />
+                            <Image className="hidden group-hover:block" src='/icons/twitch-white.svg' alt='twitch icon' width={140} height={140} />
                         </div>
-                    </a>
-                    <a className='flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='blank'>
-                        <div className='flex justify-end w-full'>
-                            <Image src='/icons/link-external.svg' alt='external link icon' width={20} height={20}/>
+                    </div>
+                </a>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-white hover:text-white text-xl bg-white bg-opacity-20 border-2 border-black rounded-md p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='_blank'>
+                    <div className='flex justify-end w-full'>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/link-external.svg' alt='external link icon' width={20} height={20} />
+                            <Image className="hidden group-hover:block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
                         </div>
-                        <div className='flex flex-col items-center justify-evenly h-full'>
-                            <p className='text-xl lg:text-3xl text-center'>{t('reddit details')}</p>
-                            <Image src='/icons/reddit-dark.svg' alt='reddit icon' width={140} height={140} />
+                    </div>
+                    <div className='flex flex-col items-center justify-evenly h-full'>
+                        <p className='text-xl lg:text-3xl text-center'>{t('reddit details')}</p>
+                        <div className="relative">
+                            <Image className="block group-hover:hidden" src='/icons/reddit-dark.svg' alt='reddit icon' width={140} height={140} />
+                            <Image className="hidden group-hover:block" src='/icons/reddit-white.svg' alt='reddit icon' width={140} height={140} />
                         </div>
-                    </a>
-                </div>
-                {/* IMAGE OF CHARACTERS ON TRANSPARENT BG */}
-                {/* <Image className='lg:w-1/2' src='/images/characters.svg' alt='characters looking' width={300} height={300}/> */}
+                    </div>
+                </a>
+            </div>
         </div>
     );
 }

@@ -24,11 +24,10 @@ function FaqPage() {
   );
 
   const toggleAnswer = (index: number) => {
-    console.log(`Toggling answer for question ${index}`); // Debug log
     setQuestions(prevQuestions => {
-      const updatedQuestions = [...prevQuestions];
-      updatedQuestions[index].showAnswer = !updatedQuestions[index].showAnswer;
-      console.log(updatedQuestions[index]); // Debug state
+      const updatedQuestions = prevQuestions.map((q, i) =>
+        i === index ? { ...q, showAnswer: !q.showAnswer } : q
+      );
       return updatedQuestions;
     });
   };
@@ -48,13 +47,6 @@ function FaqPage() {
               <p className='text-2xl'>{item.question}</p>
               {item.showAnswer && <p className='my-2 text-xl'>{item.answer}</p>}
             </div>
-            <Image 
-              width={30} 
-              height={30} 
-              className='cursor-pointer' 
-              alt={item.showAnswer ? 'minus' : 'plus'} 
-              src={item.showAnswer ? '/icons/minus-square.svg' : '/icons/plus-square.svg'} 
-            />
           </li>
         ))}
       </ul>

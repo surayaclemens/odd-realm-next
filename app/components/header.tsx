@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <>
       {/* MOBILE MENU HEADER */}
-      <header className="font-sans flex flex-col justify-center items-center p-8 lg:hidden text-white">
+      <header className="font-sans flex flex-col justify-center items-center p-8 lg:hidden text-white uppercase">
         <div className="flex w-full justify-between items-center">
           {/* Odd Realm Logo */}
           <Link className="w-[100px] lg:w-[100px]" href="/">
@@ -37,7 +37,7 @@ const Header: React.FC = () => {
         </div>
         {/* MENU CONTENT */}
         {isMobileMenuOpen && (
-          <div className="w-full py-6 flex flex-col justify-start items-center z-50 uppercase">
+          <div className="w-full py-6 flex flex-col justify-start items-center z-50">
             <Link className="w-40 rounded-md bg-white bg-opacity-20 border-black border-2 text-black text-md text-center p-2 my-4" href="/about" onClick={toggleMobileMenu}>About</Link>
             <Link className="w-40 rounded-md bg-white bg-opacity-20 border-black border-2 text-black text-md text-center p-2 my-4" href="/community" onClick={toggleMobileMenu}>Community</Link>
             <Link className="w-40 rounded-md bg-white bg-opacity-20 border-black border-2 text-black text-md text-center p-2 my-4" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
@@ -47,20 +47,22 @@ const Header: React.FC = () => {
       </header>
 
       {/* DESKTOP MENU HEADER */}
-      <header className="hidden lg:flex fixed w-full text-black justify-between items-center lg:px-32 py-4 font-sans bg-white bg-opacity-20">
-        <div className="w-1/3 flex justify-start items-center">
+      <header className="hidden lg:flex fixed w-full text-black justify-between items-center lg:px-32 py-4 font-sans bg-white bg-opacity-20 uppercase">
+        <div className="flex justify-center">
+          <Link href="/" className="flex">
+            <Image src="/images/logo.svg" alt="logo" width={130} height={100} />
+          </Link>
+        </div>
+        <div className="flex justify-end items-center">
+          {/* <Link className="w-32 mr-4 rounded-md text-md text-sm text-center p-2 border-black hover:text-white hover:border-white border-2 bg-white bg-opacity-20 text-black" href="/">Home</Link> */}
           <Link className="w-32 mr-4 rounded-md text-md text-sm text-center p-2 border-black hover:text-white hover:border-white border-2 bg-white bg-opacity-20 text-black" href="/about">About</Link>
           <Link className="w-32 mr-4 rounded-md text-md text-sm text-center p-2 border-black hover:text-white hover:border-white border-2 bg-white bg-opacity-20 text-black" href="/community">Community</Link>
           <Link className="w-32 mr-4 rounded-md text-md text-sm text-center p-2 border-black hover:text-white hover:border-white border-2 bg-white bg-opacity-20 text-black" href="/contact">Contact</Link>
+          <p className="rounded-md text-sm text-center p-2  bg-pink border-black hover:border-white border-2 hover:text-white cursor-pointer custom-pulse" onClick={handleModal}>Play the game ✨</p>
         </div>
-        <div className="w-1/3 flex justify-center">
-          <Link href="/">
-            <Image src="/images/logo.svg" alt="logo" width={110} height={100} />
-          </Link>
-        </div>
-        <div className="w-1/3 flex justify-end">
-          <p className="rounded-md w-40 text-sm text-center p-2  bg-pink border-black hover:border-white border-2 hover:text-white cursor-pointer custom-pulse" onClick={handleModal}>Get Odd Realm ✨</p>
-        </div>
+        {/* <div className="w-1/3 flex justify-end">
+          
+        </div> */}
       </header>
 
       {/* BUY MODAL AT BOTTOM OF SCREEN */}
