@@ -10,6 +10,8 @@ import faqList from '../../data/faqs.json';
 
 function FaqPage() {
   const { t } = useTranslation();
+
+  // console.log(faqList);
   
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,6 +27,7 @@ function FaqPage() {
 
   const toggleAnswer = (index: number) => {
     setQuestions(prevQuestions => {
+      console.log('test')
       const updatedQuestions = prevQuestions.map((q, i) =>
         i === index ? { ...q, showAnswer: !q.showAnswer } : q
       );

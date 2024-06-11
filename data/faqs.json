@@ -1,22 +1,43 @@
 [
     {
-        "question": "dummy question that is long 1",
-        "answer": "dummy answer 1 dummy answer 1 dummy answer 1 dummy answer 1 dummy answer 1 dummy answer 1"
+        "question": "Will I get a Steam key if I buy the game on itch?",
+        "answer": "Yes you will!"
     },
     {
-        "question": "dummy question that is long 2",
-        "answer": "dummy answer 2"
+        "question": "What engine is Odd Realm built with?",
+        "answer": "Shoutout to Unity!"
     },
     {
-        "question": "dummy question that is long 3",
-        "answer": "dummy answer 3"
+        "question": "What platforms is Odd Realm available on?",
+        "answer": "Odd Realm is available for PC on Windows, Mac, and Linux via Steam."
     },
     {
-        "question": "dummy question that is long 4",
-        "answer": "dummy answer 4"
+        "question": "What's the end goal of the game?",
+        "answer": "Odd Realm is a sandbox game without a specific end goal. The primary objective is to build and sustain a thriving settlement, but players can set their own goals and challenges."
     },
     {
-        "question": "dummy question that is long 5",
-        "answer": "dummy answer 5"
+        "question": "How do I start a new game?",
+        "answer": "To start a new game, select 'New Game' from the main menu, choose your world settings, select a starting location, and begin building your settlement."
+    },
+    {
+        "question": "How do I gather resources?",
+        "answer": "Resources can be gathered by assigning your settlers to tasks like mining, foraging, chopping wood, and farming. Ensure you have the appropriate tools and settlers with the right skills."
+    },
+    {
+        "question": "How do I keep my settlers happy?",
+        "answer": "Settler happiness depends on factors like food, shelter, safety, and social interactions. Provide varied and sufficient food, comfortable living spaces, and protection from threats to keep them content."
+    },
+    {
+        "question": "What should I focus on early in the game?",
+        "answer": "To being, try to focus on gathering basic resources, building shelter, securing a food supply, and setting up defenses against potential threats."
+    },
+    {
+        "question": "Can I trade with other settlements?",
+        "answer": "Yes, trading is possible in Odd Realm. You can interact with wandering traders or other settlements to exchange goods and resources."
+    },
+    {
+        "question": "What's the significance of the different races in the game?",
+        "answer": "Different races, like humans, dwarves, and elves, have unique abilities, preferences, and challenges. Choosing a race impacts gameplay strategy and resource management."
     }
+   
 ]
