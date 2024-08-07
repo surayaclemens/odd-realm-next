@@ -11,7 +11,7 @@ const CareersPage = () => {
         window.scrollTo(0, 0)
     }, [])
     return(
-        <div className="flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-black">
+        <div className="flex min-h-screen flex-col items-start justify-start px-8 lg:px-28 font-sans text-white">
             <h1 className="text-3xl">Thanks for your interest!</h1>
             <h1 className="text-lg">Check back for future openings.</h1>
         </div>

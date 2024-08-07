@@ -15,8 +15,8 @@ function AboutPage () {
     }, [])
   
       return(
-         <div className='flex min-h-screen flex-col px-8 lg:px-32 py-8 lg:py-52 font-sans text-black'>
-            <h1 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('about our world')}</h1>
+         <div className='flex min-h-screen flex-col px-8 lg:px-32 xl:px-56 py-8 lg:py-52 font-sans text-white text-center'>
+            <h1 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('about our world')}</h1>
             <section className='w-full flex flex-col lg:py-8'>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
@@ -42,7 +42,7 @@ function AboutPage () {
             <Image width={400} height={50} className='w-full' src='' alt='gallery of game play shots' />
           {/* HOW TO PLAY */}
           <section className='w-full my-8 lg:my-16 flex flex-col'>
-              <h2 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('how to play')}</h2>
+              <h2 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('how to play')}</h2>
                   <div className='flex justify-start items-center my-2'>
                       <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
                       <p className='text-2xl lg:my-2 lg:text-3xl'>text point</p>
@@ -62,10 +62,10 @@ function AboutPage () {
           </section>
           {/* MEET THE TEAM */}
           <section className='w-full my-8 lg:my-16 flex flex-col'>
-              <h2 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('about the team')}</h2>
+              <h2 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('about the team')}</h2>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>is the creative force behind Odd Realm. After studying game design at Vancouver Film School, he taught himself how to program while working as a designer at studios such as Kabam and Blackbird Interactive. He brought these skills together with his love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>is the creative force behind Odd Realm. After achieving honors in Game Design at Vancouver Film School, he taught himself how to program while working as a designer at local game studios. He brought these skills together with his love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
               </div>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
@@ -74,7 +74,7 @@ function AboutPage () {
           </section>
           {/* SOMETHING ELSE */}
           <section className='w-full my-8 lg:my-16 flex flex-col'>
-              <h2 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>{t('something else')}</h2>
+              <h2 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('something else')}</h2>
               <p className='my-4 text-2xl lg:my-2 lg:text-3xl'>{t('check out our FAQs1')}
               <Link href="/faq" className='underline'>{t('FAQs link')}</Link>
               {t('check out our FAQs2')}</p>

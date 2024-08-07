@@ -8,8 +8,8 @@ function SiteTermsPage () {
     // const { t } = useTranslation();
 
     return(
-        <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-black'>
-            <h3 className='text-md uppercase my-2 lg:text-8xl lg:normal-case'>Terms & Conditions</h3>
+        <div className='flex min-h-screen flex-col px-8 lg:px-28 py-8 lg:py-36 font-sans text-white text-center'>
+            <h3 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>Terms & Conditions</h3>
             <p className='text-md lg:text-lg'>terms and conditions body</p>
 
         </div>
