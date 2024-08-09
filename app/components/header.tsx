@@ -54,10 +54,10 @@ const Header: React.FC = () => {
           </Link>
         </div>
         <div className="flex justify-end items-center">
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green hover:border-green border-2 text-white" href="/about">About</Link>
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green hover:border-green border-2 text-white" href="/community">Community</Link>
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green hover:border-green border-2 text-white" href="/contact">Contact</Link>
-          <p className="w-32 rounded-md text-md text-center p-2  bg-purple border-white hover:border-green border-2 hover:text-green cursor-pointer custom-pulse" onClick={handleModal}>Play ✨</p>
+          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/about">About</Link>
+          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/community">Community</Link>
+          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/contact">Contact</Link>
+          <p className="w-32 rounded-md text-md text-center p-2  bg-green border-white hover:border-green-light border-2 hover:text-green-light cursor-pointer custom-pulse" onClick={handleModal}>Play ✨</p>
         </div>
         {/* <div className="w-1/3 flex justify-end">
           

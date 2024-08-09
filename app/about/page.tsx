@@ -65,7 +65,7 @@ function AboutPage () {
               <h2 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('about the team')}</h2>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>is the creative force behind Odd Realm. After achieving honors in Game Design at Vancouver Film School, he taught himself how to program while working as a designer at local game studios. He brought these skills together with his love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><span>Waylon Snedker </span>is the founder of Unknown Origin Games and creative force behind Odd Realm. After achieving honors in Game Design at Vancouver Film School, he taught himself how to program while working as a technical designer at various local game studios. He then wove these skills together with his lifelong love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
               </div>
               <div className='flex justify-start items-center my-2'>
                   <Image width={20} height={20} className='mr-3' src='/images/logo_64_64.png' alt='team picture'/>

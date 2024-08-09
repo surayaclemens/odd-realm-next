@@ -16,7 +16,7 @@ function CommunityPage() {
             <h3 className='text-md uppercase my-4 lg:text-7xl lg:normal-case'>{t('find odd friends')}</h3>
             <h3 className='text-md my-2 lg:text-2xl lg:normal-case'>{t('We have a fantastic community of committed modders, bug reporters, etc. Join us!')}</h3>
             <div className='flex flex-col my-4 w-full justify-evenly lg:flex-row items-center'>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green hover:text-green text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block group-hover:hidden" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
@@ -31,7 +31,7 @@ function CommunityPage() {
                         </div>
                     </div>
                 </a>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green hover:text-green text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block group-hover:hidden" src='/icons/link-external.svg' alt='external link icon' width={20} height={20} />
@@ -46,7 +46,7 @@ function CommunityPage() {
                         </div>
                     </div>
                 </a>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green hover:text-green text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block group-hover:hidden" src='/icons/link-external.svg' alt='external link icon' width={20} height={20} />

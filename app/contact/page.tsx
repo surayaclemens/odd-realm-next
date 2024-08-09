@@ -68,9 +68,9 @@ function ContactPage () {
             <h3 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('contact us')}</h3>
             <h3 className='text-lg lg:text-2xl my-2 lg:my-4'>
                         {t('Use this form, or send us a message on')}
-                        <Link className='text-white hover:text-green hover:border-green bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
-                        <Link className='text-white hover:text-green hover:border-green bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
-                        <Link className='text-white hover:text-green hover:border-green bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
+                        <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
+                        <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
+                        <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
                     </h3>
             <div className='flex flex-col justify-between items-center w-full'>
                 <form className='flex flex-col w-full my-4 lg:w-1/2' onSubmit={handleSubmit}>
@@ -112,7 +112,7 @@ function ContactPage () {
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                     ></textarea>
-                    <button className='hover:text-green hover:border-green text-xl bg-white bg-opacity-20 text-white border-2 border-white rounded-md py-2 px-3 my-6'>
+                    <button className='hover:text-green-light hover:border-green-light text-xl bg-white bg-opacity-20 text-white border-2 border-white rounded-md py-2 px-3 my-6'>
                     {isSent ? t('sent!') : t('send')}
                     </button>
                 </form>
