@@ -37,7 +37,7 @@ export default function Home() {
       <section className='my-4 lg:my-16 w-full flex flex-col justify-center items-center'>
         <h1 className='text-sm lg:text-lg uppercase'>{t('about the game')}</h1>
         <p className='my-4 text-2xl lg:text-7xl'>{t('gameDetails2')}</p>
-        <div className='mt-16 bg-midnight w-full lg:w-4/5 p-8 flex justify-center items-center z-0 rounded-md'>
+        <div className='mt-16 bg-midnight w-full p-8 flex justify-center items-center z-0 rounded-md'>
           <Image className='w-4/5' src="/images/gifs/green_gif.gif" alt="gameplay farming gif" width={100} height={100} />
         </div>
       </section>
@@ -45,7 +45,7 @@ export default function Home() {
       {/* SECTION 2 */}
       <section className='my-4 lg:my-16 w-full flex flex-col justify-center items-center'>
         <p className='my-4 text-2xl lg:text-7xl'>{t('gameDetails3')}</p>
-        <div className='mt-16 bg-midnight w-full lg:w-4/5 p-8 flex justify-center items-center z-0 rounded-md'>
+        <div className='mt-16 bg-midnight w-full p-8 flex justify-center items-center z-0 rounded-md'>
           <Image className='w-4/5' src="/images/gifs/grey_gif.gif" alt="gameplay farming gif" width={100} height={100} />
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function Home() {
       {/* SECTION 3 */}
       <section className='my-4 lg:my-16 w-full flex flex-col items-center justify-center'>
         <p className='my-4 text-2xl lg:text-7xl text-center'>{t('gameDetails4')}</p>
-        <div className='my-16 bg-midnight w-full lg:w-4/5 p-8 flex justify-center items-center z-0 rounded-md'>
+        <div className='my-16 bg-midnight w-full p-8 flex justify-center items-center z-0 rounded-md'>
           <Image className='w-4/5' src="/images/gifs/pink_gif.gif" alt="gameplay farming gif" width={100} height={100} />
         </div>
         <Link className='hover:text-green-light hover:border-green-light text-xl bg-white bg-opacity-20 text-white border-2 border-white rounded-md my-4 py-2 px-3 text-center lg:w-[350px]' href="/about">{t('Get the game')}</Link>
