@@ -13,6 +13,10 @@ const Header: React.FC = () => {
     if (isBuyModalOpen) setIsBuyModalOpen(false);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  }
+
   const handleModal = () => {
     setIsBuyModalOpen(!isBuyModalOpen);
     if (isMobileMenuOpen) setIsMobileMenuOpen(false);
@@ -25,7 +29,7 @@ const Header: React.FC = () => {
       <header className="font-sans flex flex-col justify-center items-center p-8 lg:hidden text-white">
         <div className="flex w-full justify-between items-center">
           {/* Odd Realm Logo */}
-          <Link className="w-[100px] lg:w-[100px]" href="/">
+          <Link className="w-[100px] lg:w-[100px]" href="/" onClick={closeMobileMenu}>
             <Image src="/images/logo.svg" alt="logo" width={120} height={120} />
           </Link>
           {/* Hamburger/Close icons */}

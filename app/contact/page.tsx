@@ -66,10 +66,10 @@ function ContactPage () {
       return(
           <div className='flex min-h-screen flex-col px-8 lg:px-32 xl:px-56 py-8 lg:py-52 font-sans text-white text-center'>
             <h3 className='text-5xl my-2 lg:text-7xl lg:normal-case'>{t('contact us')}</h3>
-            <h3 className='text-lg lg:text-2xl my-2 lg:my-4'>{t('Use this form, or send us a message on')}
-                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
-                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
-                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 lg:text-xl' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
+            <h3 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('Use this form, or send us a message on')}
+                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 text-sm lg:text-lg' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
+                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 text-sm lg:text-lg' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
+                <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-md mx-2 px-2 text-sm lg:text-lg' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
             </h3>
             <div className='flex flex-col justify-between items-center w-full'>
                 <form className='flex flex-col w-full my-4 lg:w-2/3 xl:w-1/2' onSubmit={handleSubmit}>

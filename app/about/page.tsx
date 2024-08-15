@@ -16,39 +16,40 @@ function AboutPage () {
   
       return(
          <div className='flex min-h-screen w-full flex-col justify-center items-center px-8 lg:px-32 xl:px-56 py-8 lg:py-52 font-sans text-white'>
-            <h1 className='text-5xl my-4 lg:text-7xl'>{t('About our world')}</h1>
-            <div className='flex w-full justify-evenly my-2'>
-                <Image className='w-1/4 rounded-md' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100}/>
-                <Image className='w-1/4 rounded-md' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100}/>
-                <Image className='w-1/4 rounded-md' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100}/>
+            <h1 className='text-5xl my-2 lg:text-7xl'>{t('About our world')}</h1>
+            <h2 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('An odd little realm...')}</h2>
+            <div className='bg-midnight w-full lg:w-[1000px] my-4 p-8 flex justify-center items-center z-0 rounded-md'>
+                <Image className='w-full lg:w-[1000px]' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100} />
             </div>
             <section className='w-full my-8 lg:py-8'>
                 <h2 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('What you will find')}</h2>
-                <div className='flex justify-start items-center my-2'>
-                    <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
+                <div className='flex justify-start items-start lg:items-center my-2'>
+                    <Image width={15} height={15} className='m-2' src='/images/logo_64_64.png' alt='custom bullet point'/>
                     <p className='text-2xl lg:my-2 lg:text-3xl'>{t('gameFact1')}</p>
                 </div>
-                <div className='flex justify-start items-center my-2'>
-                    <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
+                <div className='flex justify-start items-start lg:items-center my-2'>
+                    <Image width={15} height={15} className='m-2' src='/images/logo_64_64.png' alt='custom bullet point'/>
                     <p className='text-2xl lg:my-2 lg:text-3xl'>{t('gameFact2')}</p>
                 </div>
-                <div className='flex justify-start items-center my-2'>
-                    <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
+                <div className='flex justify-start items-start lg:items-center my-2'>
+                    <Image width={15} height={15} className='m-2' src='/images/logo_64_64.png' alt='custom bullet point'/>
                     <p className='text-2xl lg:my-2 lg:text-3xl'>{t('gameFact3')}</p>
                 </div>
-                <div className='flex justify-start items-center my-2'>
-                    <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
+                <div className='flex justify-start items-start lg:items-center my-2'>
+                    <Image width={15} height={15} className='m-2' src='/images/logo_64_64.png' alt='custom bullet point'/>
                     <p className='text-2xl lg:my-2 lg:text-3xl'>{t('gameFact4')}</p>
                 </div>
-                <div className='flex justify-start items-center my-2'>
-                    <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
+                <div className='flex justify-start items-start lg:items-center my-2'>
+                    <Image width={15} height={15} className='m-2' src='/images/logo_64_64.png' alt='custom bullet point'/>
                     <p className='text-2xl lg:my-2 lg:text-3xl'>{t('gameFact5')}</p>
                 </div>
 
             </section>
-        {/* <div className='mt-16 bg-midnight w-full p-8 flex justify-center items-center z-0 rounded-md'>
-            <Image className='w-full lg:w-[900px] rounded-md' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100} />
-        </div> */}
+            <div className='bg-midnight w-full lg:w-[1000px] my-4 p-8 flex justify-center items-evenly z-0 rounded-md'>
+                <Image className='w-1/2 mx-2 rounded-sm' src="/images/gameplay-home.png" alt="gameplay farming gif" width={400} height={100} />
+                <Image className='w-1/2 mx-2 rounded-sm' src="/images/gameplay-river.png" alt="gameplay farming gif" width={400} height={100} />
+
+            </div>
           {/* HOW TO PLAY */}
           <section className='w-full my-8 lg:my-16 flex flex-col justify-center items-center'>
               <h2 className='text-sm lg:text-lg uppercase my-2'>{t('Goals of the game')}</h2>
