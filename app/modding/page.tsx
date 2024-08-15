@@ -15,32 +15,9 @@ function ModPage () {
   
       return(
           <div className='flex min-h-screen flex-col px-8 lg:px-32 xl:px-56 py-8 lg:py-52 font-sans text-white'>
-             <h3 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('modding policy')}</h3>
+             <h3 className='text-5xl my-2 lg:text-7xl text-center'>{t('modding policy')}</h3>
               <div className='flex flex-col my-4'>
                 <p className='text-xl'>Coming soon...</p>
-                  {/* <ul className='flex flex-col'>
-                      <h3 className='text-lg uppercase'>{t('please do')}</h3>
-                      <li className='flex flex-row justify-start items-center'>
-                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
-                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
-                      </li>
-                      <li className='flex flex-row justify-start items-center'>
-                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
-                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
-                      </li>
-                  </ul> */}
-  
-                  {/* <ul className='flex flex-col my-4'>
-                      <h3 className='text-lg uppercase'>{t('please dont')}</h3>
-                      <li className='flex flex-row justify-start items-center'>
-                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
-                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
-                      </li>
-                      <li className='flex flex-row justify-start items-center'>
-                          <Image width={20} height={20} className='mr-2' src='/images/logo_64_64.png' alt='thumbs-up icon'/>
-                          <p className='my-2 text-2xl lg:text-4xl'>Point 1</p>
-                      </li>
-                  </ul> */}
               </div>
           </div>
       );

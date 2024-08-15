@@ -30,18 +30,18 @@ const Header: React.FC = () => {
           </Link>
           {/* Hamburger/Close icons */}
           {isMobileMenuOpen ? (
-            <Image className="w-[50px]" src='/icons/minus-square.svg' width={100} height={100} alt="menu icon" onClick={toggleMobileMenu} />
+            <Image className="w-[30px]" src='/icons/close-white.svg' width={100} height={100} alt="menu icon" onClick={toggleMobileMenu} />
           ) : (
-            <Image className="w-[50px]" src='/icons/plus-square.svg' width={100} height={100} alt="menu icon" onClick={toggleMobileMenu} />
+            <Image className="w-[30px]" src='/icons/hamburger-white.svg' width={100} height={100} alt="menu icon" onClick={toggleMobileMenu} />
           )}
         </div>
         {/* MENU CONTENT */}
         {isMobileMenuOpen && (
           <div className="w-full py-6 flex flex-col justify-start items-center z-50">
-            <Link className="w-40 rounded-md bg-white bg-opacity-20 border-white border-2 text-white text-md text-center p-2 my-4" href="/about" onClick={toggleMobileMenu}>About</Link>
-            <Link className="w-40 rounded-md bg-white bg-opacity-20 border-white border-2 text-white text-md text-center p-2 my-4" href="/community" onClick={toggleMobileMenu}>Community</Link>
-            <Link className="w-40 rounded-md bg-white bg-opacity-20 border-white border-2 text-white text-md text-center p-2 my-4" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
-            <p className="rounded-md text-md w-40 text-center p-2 my-2 border-white border-2 text-white bg-pink uppercase cursor-pointer" onClick={handleModal}>Get Odd Realm</p>
+            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/about" onClick={toggleMobileMenu}>About</Link>
+            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/community" onClick={toggleMobileMenu}>Community</Link>
+            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
+            <p className="rounded-md text-md w-40 text-center p-2 my-2 border-white border-2 text-white bg-green cursor-pointer" onClick={handleModal}>Play ✨</p>
           </div>
         )}
       </header>

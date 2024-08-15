@@ -19,7 +19,7 @@ function PressPage () {
   
       return(
           <div className='flex min-h-screen flex-col px-8 lg:px-28 xl:px-56 py-8 lg:py-52 font-sans text-white'>
-            <h3 className='text-md uppercase my-2 lg:text-7xl lg:normal-case'>{t('press kit')}</h3>
+            <h3 className='text-5xl my-2 lg:text-7xl text-center'>{t('press kit')}</h3>
 
             <div className='flex flex-col my-4'>
                 <p className='my-1 text-2xl lg:text-4xl'>{t('press kit text 1')}</p>

@@ -44,9 +44,9 @@ const Footer: React.FC = () => {
             </div>
             {/* copyright */}
             <div className='flex flex-col justify-center items-center py-4'>
-                <p className='text-sm text-center'>&copy; 2023 Unknown Origin Games. All Rights Reserved.</p>
+                <p className='text-sm text-center'>&copy; 2024 Unknown Origin Games. All Rights Reserved.</p>
                 <a href='https://www.suraya.xyz' target='blank'>
-                    <p className='text-xs'>Website by Soma Creative Studio</p>
+                    <p className='text-xs hover:text-green-light'>Website by suraya.xyz</p>
                 </a>
             </div>
             
