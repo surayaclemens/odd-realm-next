@@ -40,7 +40,8 @@ function ReviewsPage () {
                         {/* long-form steam reviews */}
                         {reviews.map((item, index) => {
                             return (
-                                <div className='flex bg-white bg-opacity-20 hover:bg-opacity-40 rounded-md my-2 p-4 lg:px-36 lg:py-8' key={index}>
+                                <div className='flex bg-white bg-opacity-20 hover:bg-opacity-40 rounded-md my-2 p-4 lg:px-36 lg:py-8' 
+                                key={index}>
                                     <p className='text-xl italic'>&quot;{item.text.replace(/"/g, "&quot;")}&quot;</p>
                                 </div>
                             )

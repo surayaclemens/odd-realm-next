@@ -70,7 +70,7 @@ function AboutPage () {
                     <div className=''>
                         <div className='flex justify-start items-center my-2'>
                             <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
-                            <p className='text-2xl lg:my-2 lg:text-3xl'>Advance the colony's technology</p>
+                            <p className='text-2xl lg:my-2 lg:text-3xl'>Advance the colony&apos;s technology</p>
                         </div>
                         <div className='flex justify-start items-center my-2'>
                             <Image width={15} height={15} className='mr-3' src='/images/logo_64_64.png' alt='custom bullet point'/>
@@ -90,7 +90,7 @@ function AboutPage () {
                   <p className='text-2xl lg:my-2 lg:text-3xl'><a className='hover:underline text-green-light' href='https://www.linkedin.com/in/waylon-snedker-33566230/' target='_blank'>Waylon Snedker</a> is the founder of Unknown Origin Games and creative force behind Odd Realm. After achieving honors in Game Design at Vancouver Film School, he taught himself how to program while working as a technical designer at various local game studios. He then wove these skills together with his lifelong love of fantasy and world-building to complete Odd Realm, his first solo venture as an indie developer.</p>
               </div>
               <div className='flex justify-start items-center my-2'>
-                  <p className='text-2xl lg:my-2 lg:text-3xl'><a className='hover:underline text-green-light' href='https://www.linkedin.com/in/mattcreamer/' target='_blank'>Matthew Creamer</a> is who you can thank for Odd Realm's relaxing, immersive score. With 20 years in the industry, he is an accomplished composer and multimedia artist who excels at using music to create emotional experiences in video games and loves collaborating with creative teams who share his passion.</p>
+                  <p className='text-2xl lg:my-2 lg:text-3xl'><a className='hover:underline text-green-light' href='https://www.linkedin.com/in/mattcreamer/' target='_blank'>Matthew Creamer</a> is who you can thank for Odd Realm&apos;s relaxing, immersive score. With 20 years in the industry, he is an accomplished composer and multimedia artist who excels at using music to create emotional experiences in video games and loves collaborating with creative teams who share his passion.</p>
               </div>
           </section>
           {/* SOMETHING ELSE */}
