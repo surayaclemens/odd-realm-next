@@ -12,11 +12,11 @@ function CommunityPage() {
     }, []);
 
     return (
-        <div className='flex min-h-screen flex-col px-8 lg:px-32 xl:px-56 py-8 lg:py-52 font-sans text-white text-center'>
+        <div className='flex min-h-screen flex-col px-8 lg:px-32 xl:px-56 py-8 lg:py-36 font-sans text-white text-center'>
             <h1 className='text-5xl my-2 lg:text-7xl lg:normal-case'>{t('Community')}</h1>
             <h2 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('Find odd friends')}</h2>
             <div className='flex flex-col my-4 w-full justify-evenly lg:flex-row items-center'>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://discord.gg/6bw3k6w' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-sm p-4 my-2' href='https://discord.gg/6bw3k6w' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
@@ -29,7 +29,7 @@ function CommunityPage() {
                         </div>
                     </div>
                 </a>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-sm p-4 my-2' href='https://www.twitch.tv/directory/category/odd-realm' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
@@ -42,7 +42,7 @@ function CommunityPage() {
                         </div>
                     </div>
                 </a>
-                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-md p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='_blank'>
+                <a className='group flex flex-col justify-between items-center w-[280px] h-[280px] lg:w-[320px] lg:h-[320px] hover:border-green-light hover:text-green-light text-xl bg-white bg-opacity-20 border-2 border-white rounded-sm p-4 my-2' href='https://www.reddit.com/r/oddrealm/' target='_blank'>
                     <div className='flex justify-end w-full'>
                         <div className="relative">
                             <Image className="block" src='/icons/link-external-white.svg' alt='external link icon' width={20} height={20} />
