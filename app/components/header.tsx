@@ -42,26 +42,26 @@ const Header: React.FC = () => {
         {/* MENU CONTENT */}
         {isMobileMenuOpen && (
           <div className="w-full py-6 flex flex-col justify-start items-center z-50">
-            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/about" onClick={toggleMobileMenu}>About</Link>
-            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/community" onClick={toggleMobileMenu}>Community</Link>
-            <Link className="w-40 rounded-md border-white border-2 text-white text-md text-center p-2 my-4" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
-            <p className="rounded-md text-md w-40 text-center p-2 my-2 border-white border-2 text-white bg-green cursor-pointer" onClick={handleModal}>Play ✨</p>
+            <Link className="w-40 rounded-sm border-white border-2 text-white text-md text-center p-2 my-4" href="/about" onClick={toggleMobileMenu}>About</Link>
+            <Link className="w-40 rounded-sm border-white border-2 text-white text-md text-center p-2 my-4" href="/community" onClick={toggleMobileMenu}>Community</Link>
+            <Link className="w-40 rounded-sm border-white border-2 text-white text-md text-center p-2 my-4" href="/contact" onClick={toggleMobileMenu}>Contact</Link>
+            <p className="rounded-sm text-md w-40 text-center p-2 my-2 border-white border-2 text-white bg-green cursor-pointer" onClick={handleModal}>Play ✨</p>
           </div>
         )}
       </header>
 
       {/* DESKTOP MENU HEADER */}
-      <header className="hidden lg:flex fixed w-full text-white justify-between items-center lg:px-16 py-4 font-sans bg-midnight rounded-b-md z-20">
+      <header className="hidden lg:flex fixed w-full text-white justify-between items-center lg:px-16 py-8 font-sans z-20">
         <div className="flex justify-center">
           <Link href="/" className="flex">
-            <Image src="/images/logo.svg" alt="logo" width={100} height={100} />
+            <Image className="opacity-90" src="/images/logo.svg" alt="logo" width={120} height={120} />
           </Link>
         </div>
-        <div className="flex justify-end items-center">
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/about">About</Link>
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/community">Community</Link>
-          <Link className="w-32 mr-4 rounded-md text-md text-md text-center p-2 border-white hover:text-green-light hover:border-green-light border-2 text-white" href="/contact">Contact</Link>
-          <p className="w-32 rounded-md text-md text-center p-2  bg-green border-white hover:border-green-light border-2 hover:text-green-light cursor-pointer custom-pulse" onClick={handleModal}>Play ✨</p>
+        <div className="flex justify-end items-center uppercase text-white text-opacity-80">
+          <Link className="mr-4 text-xl text-center p-2 hover:text-green-light " href="/about">About</Link>
+          <Link className="mr-4 text-xl text-center p-2 hover:text-green-light" href="/community">Community</Link>
+          <Link className="mr-4 text-xl text-center p-2 hover:text-green-light" href="/contact">Contact</Link>
+          <p className="text-xl text-center p-2 text-green cursor-pointer custom-pulse" onClick={handleModal}>Buy</p>
         </div>
         {/* <div className="w-1/3 flex justify-end">
           

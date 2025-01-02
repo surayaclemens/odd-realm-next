@@ -26,24 +26,23 @@ body {
 
 @keyframes custom-pulse {
   0% {
-    background-color: #FD679F;
+    color: #FD679F;
   }
   25% {
-    background-color: #B4ABE8;
+    color: #B4ABE8;
   }
   50% {
-    background-color: #8A7CDA;
+    color: #8A7CDA;
   }
   75% {
-    background-color: #E37AC8;
+    color: #E37AC8;
   }
   100% {
-    background-color: #FD679F;
+    color: #FD679F;
   }
 }
 
 .custom-pulse:hover {
   animation: custom-pulse 4s linear infinite;
-  border: 2px solid white;
 }
 
