@@ -5,7 +5,7 @@
   
   .typing::after {
     content: ""; /* Cursor */
-    animation: typing 5s steps(40, end);
+    animation: typing 4s steps(40, end);
     overflow: hidden;
     position: absolute;
     bottom: 0;

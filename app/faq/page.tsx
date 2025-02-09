@@ -41,7 +41,7 @@ function FaqPage() {
       <ul className='flex flex-col items-center w-full my-8'>
         {questions.map((item: any, index: number) => (
           <li 
-            className='flex justify-between items-center w-full lg:w-4/5 my-2 bg-white bg-opacity-20 border-2 rounded-sm border-white p-2 hover:border-green-light hover:text-green-light cursor-pointer' 
+            className='flex justify-between items-center w-full lg:w-4/5 my-2 bg-white bg-opacity-20 border-2 rounded-lg border-white p-2 hover:border-green-light hover:text-green-light cursor-pointer' 
             key={index} 
             onClick={() => toggleAnswer(index)}
           >

@@ -22,8 +22,8 @@ function AboutPage () {
             {/* CLOUDS & 2 GIF */}
             <div className='relative my-4 w-full flex justify-center items-evenly z-0'>
                 <Image className='absolute top-0 left-0 w-1/2 h-full object-cover z-0' src="/images/clouds.svg" alt="misty clouds bg" width={100} height={100} />
-                <Image className='w-1/2 mx-2 rounded-sm relative z-10' src="/images/gameplay-home.png" alt="gameplay farming gif" width={400} height={200} />
-                <Image className='w-1/2 mx-2 rounded-sm relative z-10' src="/images/gameplay-river.png" alt="gameplay farming gif" width={400} height={200} />
+                <Image className='w-1/2 mx-2 rounded-lg relative z-10' src="/images/gameplay-home.png" alt="gameplay farming gif" width={400} height={200} />
+                <Image className='w-1/2 mx-2 rounded-lg relative z-10' src="/images/gameplay-river.png" alt="gameplay farming gif" width={400} height={200} />
             </div>
 
             {/* WHAT YOU WILL FIND */}
@@ -54,7 +54,7 @@ function AboutPage () {
             {/* BIG IMAGE */}
             <div className='relative my-4 w-full flex justify-center items-center z-0'>
                 <Image className='absolute top-0 left-0 w-full h-full object-cover z-0' src="/images/clouds.svg" alt="misty clouds bg" width={100} height={100} />
-                <Image className='relative w-full aspect-video z-10 rounded-sm' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100} />
+                <Image className='relative w-full aspect-video z-10 rounded-lg' src="/images/gifs/mining_gif.gif" alt="gameplay farming gif" width={100} height={100} />
             </div>
            
           {/* GOALS OF THE GAME */}

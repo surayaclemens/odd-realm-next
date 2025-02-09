@@ -18,14 +18,14 @@ const TypingAnimation = () => {
         if (index > textToType.length) {
           clearInterval(intervalId);
         }
-      }, 60); // Adjust the interval for typing speed
+      }, 40); // Adjust the interval for typing speed
     
       return () => clearInterval(intervalId);
     }, [t]);
   
     return (
-      <div className='lg:mt-8 min-h-full min-w-full overflow-hidden  flex items-center'>
-        <p className={`text-2xl lg:text-8xl ${styles.typing}`}>
+      <div className='min-h-full min-w-full overflow-hidden flex items-center justify-center'>
+        <p className={`text-xl my-2 ${styles.typing}`}>
           {typedText}
         </p>
       </div>

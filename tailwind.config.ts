@@ -36,7 +36,7 @@ const config: Config = {
         'red': '#E35224',
         'red-light': '#FF5021',
         'placeholder': 'rgba(255, 255, 255, 0.5)',
-        'midnight': '#002165',
+        'midnight': '#000122',
         'magenta': '#E37AC8',
         'fuscia': '#ED0055'
       },

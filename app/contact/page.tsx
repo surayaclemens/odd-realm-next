@@ -79,7 +79,7 @@ function ContactPage () {
             <h2 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('we like to chat')}</h2>
             <div className='flex flex-col justify-between items-center w-full'>
                 <form className='flex flex-col w-full my-4 lg:w-2/3 xl:w-2/3' onSubmit={handleSubmit}>
-                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-sm p-2 focus:outline-green-light' 
+                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-lg p-2 focus:outline-green-light' 
                         type='text' 
                         placeholder={t('first name')}
                         minLength={2}
@@ -88,7 +88,7 @@ function ContactPage () {
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                     />
-                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-sm p-2 focus:outline-green-light' 
+                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-lg p-2 focus:outline-green-light' 
                         type='text' 
                         placeholder={t('last name')}
                         minLength={2}
@@ -96,7 +96,7 @@ function ContactPage () {
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                     />
-                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-sm p-2 focus:outline-green-light' 
+                    <input className='my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-lg p-2 focus:outline-green-light' 
                         type='email'
                         placeholder={t('youremail@address.com')}
                         required
@@ -108,17 +108,17 @@ function ContactPage () {
                     />
                     {/* subject */}
                     <div className='flex items-center justify-between w-full'>
-                        <input className='w-full my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-sm p-2 focus:outline-green-light' 
+                        <input className='w-full my-2 text-md lg:text-xl bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-lg p-2 focus:outline-green-light' 
                             type='text' 
                             placeholder={t('subject')}
                             required
                             value={subject}
                             onChange={(e) => setSubject(e.target.value)}
                         />
-                        <Image width={48} height={48} className='ml-2 rounded-sm border-white hover:border-green-light border-2' src='/icons/star-white.svg' alt='magic star icon' title="Hate this part? We'll make one up for you :~)" onClick={() => handleSubject()}/>
+                        <Image width={48} height={48} className='ml-2 rounded-lg border-white hover:border-green-light border-2' src='/icons/star-white.svg' alt='magic star icon' title="Hate this part? We'll make one up for you :~)" onClick={() => handleSubject()}/>
                     </div>
                     {/* message box */}
-                    <textarea className='my-2 text-md bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-sm p-2 lg:text-xl h-[200px] focus:outline-green-light' 
+                    <textarea className='my-2 text-md bg-white bg-opacity-5 placeholder-placeholder border-2 text-white border-white rounded-lg p-2 lg:text-xl h-[200px] focus:outline-green-light' 
                         placeholder={t('your message here')} 
                         required
                         value={message}
@@ -133,14 +133,14 @@ function ContactPage () {
                         onChange={(e) => setBotDetectField(e.target.value)}
                     />
                     {/* submit button */}
-                    <button className='hover:text-green-light hover:border-green-light text-xl bg-white bg-opacity-20 text-white border-2 border-white rounded-sm py-2 px-3 my-6'>
+                    <button className='hover:text-green-light hover:border-green-light text-xl bg-white bg-opacity-20 text-white border-2 border-white rounded-lg py-2 px-3 my-6'>
                     {isSent ? t('sent!') : t('send')}
                     </button>
                 </form>
-                <h3 className='text-sm lg:text-lg uppercase my-2 text-center'>{t('or send us a message on')}
-                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-sm mx-2 px-2 text-sm lg:text-lg' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
-                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-sm mx-2 px-2 text-sm lg:text-lg' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
-                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-sm mx-2 px-2 text-sm lg:text-lg' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
+                <h3 className='text-sm lg:text-lg my-2 text-center'>{t('or send us a message on')}
+                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-lg mx-2 px-2 text-sm lg:text-lg' href='https://twitter.com/waylonsnedker' target='blank'>{t('twitter')}</Link>
+                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-lg mx-2 px-2 text-sm lg:text-lg' href='https://discord.gg/6bw3k6w' target='blank'>{t('discord')}</Link>
+                    <Link className='text-white hover:text-green-light hover:border-green-light bg-white bg-opacity-20 border-2 border-white rounded-lg mx-2 px-2 text-sm lg:text-lg' href='https://www.instagram.com/oddrealmgame/' target='blank'>{t('instagram')}</Link>
                 </h3>
             </div>
           </div>
