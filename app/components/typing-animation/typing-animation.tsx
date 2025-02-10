@@ -24,8 +24,8 @@ const TypingAnimation = () => {
     }, [t]);
   
     return (
-      <div className='min-h-full min-w-full overflow-hidden flex items-center justify-center'>
-        <p className={`text-xl my-2 ${styles.typing}`}>
+      <div className='min-w-full overflow-hidden absolute top-20 lg:top-44 left-16 z-10'>
+        <p className={`text-xl lg:text-6xl ${styles.typing}`}>
           {typedText}
         </p>
       </div>

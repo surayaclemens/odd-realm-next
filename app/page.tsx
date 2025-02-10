@@ -23,14 +23,14 @@ export default function Home() {
 
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-8 lg:px-32 xl:px-56 font-sans text-white text-opacity-90 text-center">
+    <main className="flex min-h-screen flex-col items-center justify-between font-sans text-white text-center">
       {/* TRAILER */}
-      <div className='relative lg:my-32  w-full flex flex-col justify-center items-center z-0 rounded-lg'>
-        <iframe className='relative w-full aspect-video z-10 rounded-lg' width="auto" height="auto" src="https://www.youtube.com/embed/opFFQLdP-5M?si=qTKqDGlxW_IxlLPj&autoplay=1" title="YouTube video player" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+      <div className='relative top-18 mb-32 w-full flex flex-col text-opacity-100'>
         <TypingAnimation/>
+        <iframe className='relative w-full aspect-video z-0' width="auto" height="auto" src="https://www.youtube.com/embed/opFFQLdP-5M?si=qTKqDGlxW_IxlLPj&autoplay=1&mute=1" title="YouTube video player" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
 
-    <div className='flex flex-col justify-evenly'>
+    <div className='flex flex-col justify-evenly px-8 lg:px-32 xl:px-56'>
       {/* SECTION 1 */}
       <section className='my-8 lg:my-16 w-full flex flex-col justify-center items-center'>
         <h1 className='text-sm my-4 lg:text-lg uppercase'>{t('about the game')}</h1>

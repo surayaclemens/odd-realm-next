@@ -2,7 +2,18 @@
   0% { width: 0; }
   100% { width: 100%; }
   }
-  
+
+  .typing{
+    width: 500px;
+    padding: 10px;
+    /* border: 2px solid white; */
+    text-shadow: #000122 4px 1px;
+    text-align: left;
+    background-color:rgba(4, 17, 70, 0.75);
+    border-radius: 8px;
+ 
+  }
+
   .typing::after {
     content: ""; /* Cursor */
     animation: typing 4s steps(40, end);
